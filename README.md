@@ -1,6 +1,6 @@
 # Next.js 14 Travel Website
 
-This project is a travel website built with Next.js 14 and styled with Tailwind CSS. It was created following a YouTube tutorial, and it serves as a great starting point for anyone looking to learn Next.js and Tailwind CSS for web development.
+Excited to present my latest project build of JSMastery.pro resource page. This project showcases my proficiency in front-end development, as I created the sleek and intuitive user interface of JSMastery.pro. Leveraging cutting-edge technologies such as Next js - Sanity.io - TypeScript, ensuring not only a visually appealing design but also a seamless user experience.
 
 ![jsm-platform](https://github.com/delmac-dev/jsm-platform/assets/136045782/f5dcd204-6dcd-461e-bb84-e20ea8f95bb8)
 

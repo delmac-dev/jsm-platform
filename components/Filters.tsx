@@ -7,8 +7,8 @@ import { useState } from 'react'
 const links = ['all', "next 13","frontend", "backend", "fullstack"];
 
 const Filters = () => {
-    const [active, setActive] = useState('all');
     const searchParams = useSearchParams();
+    const [active, setActive] = useState(searchParams.get('category') || '');
     const router = useRouter();
 
     const handleFilter = (link:string) => {
@@ -18,8 +18,7 @@ const Filters = () => {
             setActive('');
             newUrl = formUrlQuery({
                 params: searchParams.toString(),
-                key: "category",
-                value: null
+                keysToRemove: ['category']
             });
         } else {
             setActive(link);

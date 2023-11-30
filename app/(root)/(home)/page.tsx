@@ -13,8 +13,8 @@ export const revalidate = 900 // update page every 15 min
 
 const Page = async ({searchParams}: Props) => {
   const resources = await getResources({
-    query: '',
-    category: searchParams.category || '',
+    query: searchParams?.query || '',
+    category: searchParams?.category || '',
     page: '1'
   })
   
@@ -31,7 +31,11 @@ const Page = async ({searchParams}: Props) => {
       </section>
       <Filters />
       <section className="flex-center mt-6 w-full flex-col sm:mt-20">
-        <Header />
+        <Header
+          title = 'Resources'
+          query = {searchParams?.query || null}
+          category = {searchParams?.category || null}
+        />
 
         <div className="mt-12 flex w-full flex-wrap justify-center gap-16 sm:justify-start">
           {resources?.length > 0 ? (

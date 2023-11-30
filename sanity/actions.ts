@@ -37,3 +37,29 @@ export const getResources = async (params: GetResourcesParams) => {
     }
     
 }
+export const getResourcesPlayList = async () => {
+
+    try {
+        const resources = await readClient.fetch(
+            groq`*[_type == "resourcePlaylist"]{
+                title,
+                _id,
+                resources[0...6]->{
+                    title,
+                    _id,
+                    downloadLink,
+                    "image": poster.asset->url,
+                    views,
+                    category
+                }
+            }`
+        );
+
+        return resources;
+        
+    } catch (error) {
+        console.log(error);
+        
+    }
+    
+}

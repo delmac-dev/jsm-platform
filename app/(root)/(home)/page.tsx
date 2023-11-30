@@ -1,17 +1,23 @@
 import Filters from '@/components/Filters'
+import Header from '@/components/Header'
 import ResourceCard from '@/components/ResourceCard'
 import SearchForm from '@/components/SearchForm'
 import { getResources } from '@/sanity/actions'
 import React from 'react'
 
+interface Props {
+  searchParams: { [key: string]: string | undefined }
+}
+
 export const revalidate = 900 // update page every 15 min
 
-const Page = async () => {
+const Page = async ({searchParams}: Props) => {
   const resources = await getResources({
     query: '',
-    category: '',
+    category: searchParams.category || '',
     page: '1'
   })
+  
 
   return (
     <main className='flex-center paddings mx-auto w-full max-w-screen-2xl flex-col'>
@@ -25,7 +31,7 @@ const Page = async () => {
       </section>
       <Filters />
       <section className="flex-center mt-6 w-full flex-col sm:mt-20">
-        Header
+        <Header />
 
         <div className="mt-12 flex w-full flex-wrap justify-center gap-16 sm:justify-start">
           {resources?.length > 0 ? (

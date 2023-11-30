@@ -44,7 +44,7 @@ const Page = async ({searchParams}: Props) => {
 
         <div className="mt-12 flex w-full flex-wrap justify-center gap-16 sm:justify-start">
           {resources?.length > 0 ? (
-            resources.map((resource: any, index: number) => (
+            resources.map((resource: any) => (
               <ResourceCard
                 key={resource._id}
                 {...resource}
@@ -58,17 +58,17 @@ const Page = async ({searchParams}: Props) => {
         </div>
       </section>) : (
         <section className="flex-center w-full flex-col sm:mt-20">
-          {playList?.map((cluster: any)=> (
-            <div className='mt-6' key={cluster._id}>
+          {playList?.map((item: any)=> (
+            <div className='mt-6' key={item._id}>
               <Header
-                title={cluster.title}
+                title={item.title}
                 query = {null}
                 category = {null}
               />
 
               <div className="mt-12 flex w-full flex-wrap justify-center gap-16 sm:justify-start">
-                {cluster.resources?.length > 0 ? (
-                  cluster.resources.map((resource: any, index: number) => (
+                {item.resources?.length > 0 ? (
+                  item.resources.map((resource: any, index: number) => (
                     <ResourceCard
                       key={resource._id}
                       {...resource}

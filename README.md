@@ -1,4 +1,4 @@
-# Next.js 14 Travel Website
+# Next.js 14 JavaScript Mastery Resources
 
 Excited to present my latest project build of JSMastery.pro resource page. This project showcases my proficiency in front-end development, as I created the sleek and intuitive user interface of JSMastery.pro. Leveraging cutting-edge technologies such as Next js - Sanity.io - TypeScript, ensuring not only a visually appealing design but also a seamless user experience.
 

@@ -1,8 +1,6 @@
 import {
     Card,
     CardContent,
-    CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
   } from "@/components/ui/card";
@@ -20,7 +18,7 @@ interface CardProps{
 const ResourceCard = ({id, title, image, views} : CardProps) => {
   return (
     <Card className="w-full max-w-fit border-0 !bg-transparent sm:max-w-[356px]">
-        <Link href={"/"}>
+        <Link href={`/resource/${id}`}>
             <CardHeader className="flex-center flex-col gap-2.5 !p-0">
                 <div className="w-full h-fit">
                     <Image
@@ -47,13 +45,16 @@ const ResourceCard = ({id, title, image, views} : CardProps) => {
                 />
                 {views}
             </div>
-            <Link href={`/resource/${id}`}>
-
+            <Link href={`/resource/${id}`} className="flex-center text-gradient_purple-blue body-semiold gap-1.5">
+                Download Now
+                <Image
+                    src={"/arrow-blue.svg"}
+                    alt="arrow"
+                    width={13}
+                    height={10}
+                />
             </Link>
         </CardContent>
-        <CardFooter>
-            <p>Card Footer</p>
-        </CardFooter>
     </Card>
 
   )

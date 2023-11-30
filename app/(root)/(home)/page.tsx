@@ -4,6 +4,8 @@ import SearchForm from '@/components/SearchForm'
 import { getResources } from '@/sanity/actions'
 import React from 'react'
 
+export const revalidate = 900 // update page every 15 min
+
 const Page = async () => {
   const resources = await getResources({
     query: '',

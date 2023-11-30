@@ -6,19 +6,24 @@ This project is a travel website built with Next.js 14 and styled with Tailwind 
 
 The website is deployed and can be accessed at [jsm-platform-livid.vercel.app](https://jsm-platform-livid.vercel.app/)
 
-## Frameworks
+## Technologies & Frameworks
 
 - Next.js 14
 - Tailwind CSS
+- Sanity.io
+- TypeScript
+- Query-string
+- Tailwind-merge
 
 ## Features
 
-- An appealing hero section
-- A camp section featuring various camps to explore
-- An engaging travel guide section
-- A complex feature-rich section
-- A call to action section for mobile apps
-- And a big footer section with many site and social links
+- Fully functional resource search
+- A working category filter
+- Complex query handling with route params
+- Lazy loading images with next js
+- Manage Resources with sanity.io studio
+- Completely mobile responsive
+- sleek UI/UX design
 
 ## Getting Started
 

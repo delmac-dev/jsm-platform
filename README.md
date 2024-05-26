@@ -2,9 +2,11 @@
 
 Excited to present my latest project build of JSMastery.pro resource page. This project showcases my proficiency in front-end development, as I created the sleek and intuitive user interface of JSMastery.pro. Leveraging cutting-edge technologies such as Next js - Sanity.io - TypeScript, ensuring not only a visually appealing design but also a seamless user experience.
 
-![jsm-platform](https://github.com/delmac-dev/jsm-platform/assets/136045782/f5dcd204-6dcd-461e-bb84-e20ea8f95bb8)
-
 The website is deployed and can be accessed at [jsm-platform-livid.vercel.app](https://jsm-platform-livid.vercel.app/)
+
+## Screenshot
+
+![jsmastery](https://github.com/delmac-dev/jsm-platform/assets/136045782/c0e8cb4e-9b79-470c-99ef-6c2d615113e6)
 
 ## Technologies & Frameworks
 
